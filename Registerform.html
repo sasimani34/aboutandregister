@@ -1,0 +1,101 @@
+<html>
+    <head>
+        <title>Registration Form</title>
+        <style>
+            h1{text-align: center;}
+            .center {
+                margin-left: auto;
+                margin-right: auto;
+            }
+            form {
+              text-align: center;
+            }
+
+            </style>
+    </head>
+    <body>
+        
+        <h1>Registration Form</h1><br>
+        
+        <form enctype="multipart/form-data">
+            <table  class="center">
+                <tr>
+                    <td>
+                        <label for="name">Name:      </label>
+                        
+                    </td>
+                    <td><input type="text" id="name" name="name">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="emailid">Email:  </label>
+                        
+                    </td>
+                    <td><input type="email" id="emailid" name="emailid">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="pwd">Password:    </label>
+                        
+                    </td>
+                    <td><input type="password" id="pwd" name="pwd">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="pno">Phone Number:</label>
+                        
+                    </td>
+                    <td> <input type="number" id="pno" name="pno">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="gender">Gender:   </label></td>
+                    <td><label for="male">Male</label>
+                    <input type="radio" id="male" name="gender" value="Male">
+                    <label for="female">Female</label>
+                    <input type="radio" id="female" name="gender" value="Female">
+                    <label for="others">Others</label>
+                    <input type="radio" id="other" name="gender" value="Other">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="lang">Language:   </label>
+                        
+                    </td>
+                    <td><select name="lang" id="lang">
+                        <option value="">Select</option>
+                        <option value="tamil">Tamil</option>
+                        <option value="english">English</option>
+                    
+                    </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="zipcode">Zip Code: </label>
+                        
+                    </td>
+                    <td> <input type="number" id="zipcode" name="zipcode" maxlength="6">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="about">About:      </label>
+                        
+                    </td>
+                    <td> <textarea id="about" name="about"></textarea>>
+                    </td>
+                </tr>
+            </table>
+            <input type="submit" value="Register">
+           
+        </form>
+       
+
+    </body>
+</html>
